@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Section Above Navbar */
+.top-bar {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+
+/* Individual section properties */
+#section1 {
+  background: #444444;
+  width: 640px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+#section2 {
+  background: #444444;
+  width: 640px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+  font-size: 14px;
+}
+
+#section3 {
+  background: #444444;
+  width: 644px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.top-bar .top-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar .top-link:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar .logo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar .logo .tagline {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+  margin-left: 5px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 30px;
+}
+
+.navbar .nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+  color: #000;
+  border-bottom: 2px solid #333;
+}
+
+/* Hero Section Styles */
+.hero {
+  background: url("/public/final image.png") no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: #fff;
+  padding: 40px;
+}
+
+.hero .hero-content {
+  max-width: 100%;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 63px;
+
+}
+
+.hero p {
+  font-size: 26px;
+  margin-bottom: 22px;
+  margin-left: 63px;
+}
+
+.hero .cta-button {
+  background-color: #fff;
+  color: #333;
+  padding: 20px 90px;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 60px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: #333;
+  color: #fff;
+}
