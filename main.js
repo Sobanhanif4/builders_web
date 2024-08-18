@@ -1,118 +1,93 @@
-let currentSlide = 0;
+let currentCardSlide = 0;
 
-function changeSlide(direction) {
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.pagination-dot');
+function changeCardSlide(direction) {
+    const slides = document.querySelectorAll('.card-slide');
+    const dots = document.querySelectorAll('.card-pagination-dot');
     const slideCount = slides.length;
+    const visibleSlides = 5; 
 
-    currentSlide += direction;
+    currentCardSlide += direction;
 
-    if (currentSlide >= slideCount) {
-        currentSlide = 0;
-    } else if (currentSlide < 0) {
-        currentSlide = slideCount - 1;
+    if (currentCardSlide >= slideCount - visibleSlides + 1) {
+        currentCardSlide = 0;
+    } else if (currentCardSlide < 0) {
+        currentCardSlide = slideCount - visibleSlides;
     }
 
-    updateSlider();
+    updateCardSlider();
 }
 
-function updateSlider() {
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.pagination-dot');
+function updateCardSlider() {
+    const slides = document.querySelectorAll('.card-slide');
+    const dots = document.querySelectorAll('.card-pagination-dot');
 
     // Update slide position
-    const offset = -currentSlide * 100 / slides.length;
+    const offset = -currentCardSlide * 700 / slides.length;
     slides.forEach(slide => {
         slide.style.transform = `translateX(${offset}%)`;
     });
 
-    // Update pagination dots
     dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentSlide].classList.add('active');
+    dots[currentCardSlide].classList.add('active');
 }
 
-function createPagination() {
-    const slideCount = document.querySelectorAll('.slide').length;
-    const paginationContainer = document.querySelector('.pagination');
+function createCardPagination() {
+    const slideCount = document.querySelectorAll('.card-slide').length;
+    const paginationContainer = document.querySelector('.card-pagination');
 
     for (let i = 0; i < slideCount; i++) {
         const dot = document.createElement('div');
-        dot.classList.add('pagination-dot');
+        dot.classList.add('card-pagination-dot');
         dot.addEventListener('click', () => {
-            currentSlide = i;
-            updateSlider();
+            currentCardSlide = i;
+            updateCardSlider();
         });
         paginationContainer.appendChild(dot);
     }
 
-    updateSlider(); // Initialize pagination
+    updateCardSlider(); 
 }
 
-// Initialize pagination and slider
-createPagination();
+createCardPagination();
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
 
-// let currentSlide2 = 0;
-
-// function changeSlide2(n) {
-//   let slides = document.querySelectorAll(".slider-2-slide");
-//   currentSlide2 += n;
-  
-//   if (currentSlide2 < 0) {
-//     currentSlide2 = slides.length - 1;
-//   } else if (currentSlide2 >= slides.length) {
-//     currentSlide2 = 0;
-//   }
-
-//   slides.forEach((slide, index) => {
-//     slide.style.display = (index === currentSlide2 || index === currentSlide2 + 1) ? "flex" : "none";
-//   });
-// }
-
-// function showPopup() {
-//   document.getElementById("popup").style.display = "block";
-// }
-
-// function closePopup() {
-//   document.getElementById("popup").style.display = "none";
-// }
-
-// // Initialize slider
-// changeSlide2(0);
-
-// let currentCustomSlide = 0;
-
-// function changeCustomSlide(direction) {
-//   const slides = document.querySelectorAll('.custom-slide');
-//   const totalSlides = slides.length;
-
-//   currentCustomSlide += direction;
-
-//   if (currentCustomSlide >= totalSlides) {
-//     currentCustomSlide = 0;
-//   } else if (currentCustomSlide < 0) {
-//     currentCustomSlide = totalSlides - 1;
-//   }
-
-//   const newTransformValue = `translateX(-${currentCustomSlide * 100}%)`;
-//   document.querySelector('.custom-slides').style.transform = newTransformValue;
-// }
-
-// function showDetails() {
-//   alert('Details about the washroom and tiles.');
-// }
-
-var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-    loop: true,
+  hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
   });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+      loop: true,
+    });
+  
+    document.querySelectorAll('.toggle-overlay').forEach(button => {
+      button.addEventListener('click', function () {
+        const overlay = this.previousElementSibling;
+        overlay.classList.toggle('active');
+        const icon = this.querySelector('.arrow-icon');
+        icon.textContent = overlay.classList.contains('active') ? '▼' : '▲';
+      });
+    });
+  });
+  
+  
+
+  
+  

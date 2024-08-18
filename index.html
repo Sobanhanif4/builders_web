@@ -18,144 +18,223 @@
       <a href="#" class="top-link" id="section3">WHAT'S IN STOCK</a>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <img src="/public/Logo.png" alt="Company Logo" />
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">COUNTERTOPS</a></li>
-        <li><a href="#">ARCHITECTURAL</a></li>
-        <li><a href="#">COMMERCIAL</a></li>
-        <li><a href="#">STONE & PRODUCTS</a></li>
-      </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>ENJOY EVERYDAY LUXURY</h1>
-        <p>It's never been easier to design and achieve your ideal outcome.</p>
-        <a href="#" class="cta-button">REQUEST A QUOTE</a>
-      </div>
-    </section>
-
-    <!-- <section class="slider-1">
-      <h2 class="slider-h2">Start Your Journy</h2>
-      <div class="slider-container"></div>
-    </section> -->
-
-    <section class="slider-1">
-      <div class="slider-container">
-        <div class="slider-h2">
-          <h2>START YOUR JOURNEY</h2>
-          <p>What type of project do you have?</p>
+    <section class="wrapper">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/public/Logo.png" alt="Company Logo" />
         </div>
+        <ul class="nav-links">
+          <li><a href="#">COUNTERTOPS</a></li>
+          <li><a href="#">ARCHITECTURAL</a></li>
+          <li><a href="#">COMMERCIAL</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">MATERIALS & PRODUCTS</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">BEST SELLERS</a></li>
+              <li><a href="#">QUARTZ</a></li>
+              <li><a href="#">NATURAL STONE</a></li>
+              <li><a href="#">LIVE INVENTORY</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      </nav>
+      
 
-        <div class="slider">
-          <button class="prev" onclick="changeSlide(-1)">&#10094; PREV</button>
-          <div class="slides">
-            <div class="slide">
-              <img
-                src="/public/pexels-vecislavas-popa-3741317.png"
-                alt="Kitchen"
-              />
-              <p class="caption">KITCHEN</p>
-            </div>
-            <div class="slide">
-              <img src="/public/spacejoy-XpbtQfr9Skg-unsplash.png" />
-              <p class="caption">BATHROOM</p>
-            </div>
-            <div class="slide">
-              <img
-                src="/public/How-to-do-Marble-Wall-Cladding.png"
-                alt="Fireplace"
-              />
-              <p class="caption">FIREPLACE</p>
-            </div>
-            <div class="slide">
-              <img src="/public/KP04BL1091.png" alt="Wall Cladding" />
-              <p class="caption">WALL CLADDING</p>
-            </div>
-            <div class="slide">
-              <img
-                src="/public/pexels-max-rahubovskiy-6301185.png"
-                alt="Wall Cladding"
-              />
-              <p class="caption">WALL CLADDING</p>
-            </div>
-            <!-- Add more slides as needed -->
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>ENJOY EVERYDAY LUXURY</h1>
+          <p>
+            It's never been easier to design and achieve your ideal outcome.
+          </p>
+          <a href="#" class="cta-button">REQUEST A QUOTE</a>
+        </div>
+      </section>
+
+      <section class="card-slider-1">
+        <div class="card-slider-container">
+          <div class="card-slider-h2">
+            <h2>START YOUR JOURNEY</h2>
+            <p>What type of project do you have?</p>
           </div>
-          <button class="next" onclick="changeSlide(1)">NEXT &#10095;</button>
-          <div class="pagination"></div>
-          <!-- Pagination container -->
-        </div>
-      </div>
-    </section>
 
-    <!-- <section class="slider-2">
-      <div class="slider-2-container">
-        <div class="slider-2-h2">
-          <h2>SHOP YOUR COUNTERTOP BY MATERIAL AND FUNCTION</h2>
-          <p>Find the perfect stone and countertop for your home.</p>
-        </div>
-    
-        <div class="slider-2-wrapper">
-          <button class="slider-2-prev" onclick="changeSlide2(-1)">&#10094; PREV</button>
-          
-          <div class="slider-2-slides">
-            <div class="slider-2-slide large-slide">
-              <img src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png" alt="Large Image">
-              <p class="caption">QUARTZ</p>
-              <div class="popup-icon" onclick="showPopup()">i</div>
+          <div class="card-slider">
+            <button class="card-prev" onclick="changeCardSlide(-1)">
+              &#10094; PREV
+            </button>
+            <div class="card-slides">
+              <div class="card-slide">
+                <img
+                  src="/public/pexels-vecislavas-popa-3741317.png"
+                  alt="Kitchen"
+                />
+                <p class="caption">KITCHEN</p>
+              </div>
+              <div class="card-slide">
+                <img
+                  src="/public/pexels-vecislavas-popa-3741317.png"
+                  alt="Kitchen"
+                />
+                <p class="caption">KITCHEN</p>
+              </div>
+              <div class="card-slide">
+                <img
+                  src="/public/pexels-vecislavas-popa-3741317.png"
+                  alt="Kitchen"
+                />
+                <p class="caption">KITCHEN</p>
+              </div>
+              <div class="card-slide">
+                <img
+                  src="/public/spacejoy-XpbtQfr9Skg-unsplash.png"
+                  alt="Bathroom"
+                />
+                <p class="caption">BATHROOM</p>
+              </div>
+              <div class="card-slide">
+                <img
+                  src="/public/How-to-do-Marble-Wall-Cladding.png"
+                  alt="Fireplace"
+                />
+                <p class="caption">FIREPLACE</p>
+              </div>
+              <div class="card-slide">
+                <img src="/public/KP04BL1091.png" alt="Wall Cladding" />
+                <p class="caption">WALL CLADDING</p>
+              </div>
+              <div class="card-slide">
+                <img
+                  src="/public/pexels-max-rahubovskiy-6301185.png"
+                  alt="Wall Cladding"
+                />
+                <p class="caption">WALL CLADDING</p>
+              </div>
             </div>
-            <div class="slider-2-slide small-slide">
-              <img src="/public/8.Ranier.png" alt="Small Image">
-              <p class="caption">SHOP MATERIAL</p>
-              <div class="popup-icon" onclick="showPopup()">i</div>
-            </div>
+            <button class="card-next" onclick="changeCardSlide(1)">
+              NEXT &#10095;
+            </button>
+            <div class="card-pagination"></div>
           </div>
-    
-          <button class="slider-2-next" onclick="changeSlide2(1)">NEXT &#10095;</button>
         </div>
-    
-        <div id="popup" class="popup-content">
-          <span class="close-popup" onclick="closePopup()">×</span>
-          <p>Details about the washroom tiles...</p>
-        </div>
-      </div>
-    </section> -->
+      </section>
+    </section>
 
     <div class="swiper mySwiper">
-      <h2 class="swiper-heading">SHOP YOUR COUNTERTOP BY MATERIAL AND FUNCTION</h2>
-      <p class="swiper-p">
-        Find the perfect stone and countertop for your home.
-      </p>
+      <div class="swiper-h-p">
+        <h2 class="swiper-heading">
+          SHOP YOUR COUNTERTOP BY MATERIAL AND FUNCTION
+        </h2>
+        <p class="swiper-p">
+          Find the perfect stone and countertop for your home.
+        </p>
+      </div>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img
-            src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
-            alt="Large Image"
-          />
+          <div class="left-img">
+            <img src="/public/8.Ranier.png" alt="Large Image" />
+            <p class="caption-wrapper">KITCHEN</p>
+            <div class="overlay-info">
+              <p>
+                Engineered stone composed of 90-95% crushed natural quartz mixed
+                with resins and pigments.
+              </p>
+              <ul>
+                <li>Highly durable.</li>
+                <li>Low maintenance.</li>
+                <li>Easy to clean.</li>
+                <li>Wide range of colors.</li>
+                <li>Prevents bacterial growth.</li>
+                <li>Can last for decades with proper care.</li>
+                <li>Cost-friendly.</li>
+                <li>Eco-friendly.</li>
+              </ul>
+            </div>
+            <button class="toggle-overlay">
+              <span class="arrow-icon">&#9650;</span>
+            </button>
+          </div>
+          <div class="right-img">
+            <img
+              src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
+              alt="Large Image"
+            />
+
+          <p class="caption-wrapper-right">SHOP MATERIAL</p>
+          </div>
         </div>
         <div class="swiper-slide">
-          <img src="/public/final image.png" alt="Large Image" />
+          <div class="left-img">
+            <img src="/public/8.Ranier.png" alt="Large Image" />
+            <p class="caption-wrapper">KITCHEN</p>
+            <div class="overlay-info">
+              <p>
+                Engineered stone composed of 90-95% crushed natural quartz mixed
+                with resins and pigments.
+              </p>
+              <ul>
+                <li>Highly durable.</li>
+                <li>Low maintenance.</li>
+                <li>Easy to clean.</li>
+                <li>Wide range of colors.</li>
+                <li>Prevents bacterial growth.</li>
+                <li>Can last for decades with proper care.</li>
+                <li>Cost-friendly.</li>
+                <li>Eco-friendly.</li>
+              </ul>
+            </div>
+            <button class="toggle-overlay">
+              <span class="arrow-icon">&#9650;</span>
+            </button>
+          </div>
+          <div class="right-img">
+            <img
+              src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
+              alt="Large Image"
+            />
+            <p class="caption-wrapper-right">SHOP MATERIAL</p>
+          </div>
         </div>
         <div class="swiper-slide">
-          <img
-            src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
-            alt="Large Image"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
-            alt="Large Image"
-          />
+          <div class="left-img">
+            <img src="/public/8.Ranier.png" alt="Large Image" />
+            <p class="caption-wrapper">KITCHEN</p>
+            <div class="overlay-info">
+              <p>
+                Engineered stone composed of 90-95% crushed natural quartz mixed
+                with resins and pigments.
+              </p>
+              <ul>
+                <li>Highly durable.</li>
+                <li>Low maintenance.</li>
+                <li>Easy to clean.</li>
+                <li>Wide range of colors.</li>
+                <li>Prevents bacterial growth.</li>
+                <li>Can last for decades with proper care.</li>
+                <li>Cost-friendly.</li>
+                <li>Eco-friendly.</li>
+              </ul>
+            </div>
+            <button class="toggle-overlay">
+              <span class="arrow-icon">&#9650;</span>
+            </button>
+          </div>
+          <div class="right-img">
+            <img
+              src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
+              alt="Large Image"
+            />
+            <p class="caption-wrapper-right">SHOP MATERIAL</p>
+          </div>
         </div>
       </div>
-      <div class="swiper-button-next">NEXT</div>
-      <div class="swiper-button-prev">PREV</div>
+      <div class="swiper-button-next">NEXT &#10095;</div>
+      <div class="swiper-button-prev">&#10094; PREV</div>
       <div class="swiper-pagination"></div>
     </div>
 
