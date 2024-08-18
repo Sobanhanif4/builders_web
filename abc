@@ -1,0 +1,45 @@
+<section class="slider-1">
+      <div class="slider-container">
+        <div class="slider-h2">
+          <h2>START YOUR JOURNEY</h2>
+          <p>What type of project do you have?</p>
+        </div>
+
+        <div class="slider">
+          <button class="prev" onclick="changeSlide(-1)">&#10094; PREV</button>
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="/public/pexels-vecislavas-popa-3741317.png"
+                alt="Kitchen"
+              />
+              <p class="caption">KITCHEN</p>
+            </div>
+            <div class="slide">
+              <img src="/public/spacejoy-XpbtQfr9Skg-unsplash.png" />
+              <p class="caption">BATHROOM</p>
+            </div>
+            <div class="slide">
+              <img
+                src="/public/How-to-do-Marble-Wall-Cladding.png"
+                alt="Fireplace"
+              />
+              <p class="caption">FIREPLACE</p>
+            </div>
+            <div class="slide">
+              <img src="/public/KP04BL1091.png" alt="Wall Cladding" />
+              <p class="caption">WALL CLADDING</p>
+            </div>
+            <div class="slide">
+              <img
+                src="/public/pexels-max-rahubovskiy-6301185.png"
+                alt="Wall Cladding"
+              />
+              <p class="caption">WALL CLADDING</p>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <button class="next" onclick="changeSlide(1)">NEXT &#10095;</button>
+        </div>
+      </div>
+    </section>

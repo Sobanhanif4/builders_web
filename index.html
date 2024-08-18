@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luxury Website</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="top-bar">
       <a href="#" class="top-link" id="section1">REQUEST A QUOTE</a>
       <a href="#" class="top-link" id="section2">VISIT OUR SHOWROOM</a>
       <a href="#" class="top-link" id="section3">WHAT'S IN STOCK</a>
-  </div>
-  
-  
+    </div>
 
     <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">
         <img src="/public/Logo.png" alt="Company Logo" />
-    
       </div>
       <ul class="nav-links">
         <li><a href="#">COUNTERTOPS</a></li>
@@ -38,9 +40,184 @@
       </div>
     </section>
 
+    <!-- <section class="slider-1">
+      <h2 class="slider-h2">Start Your Journy</h2>
+      <div class="slider-container"></div>
+    </section> -->
 
-    <section>
-      .
+    <section class="slider-1">
+      <div class="slider-container">
+        <div class="slider-h2">
+          <h2>START YOUR JOURNEY</h2>
+          <p>What type of project do you have?</p>
+        </div>
+
+        <div class="slider">
+          <button class="prev" onclick="changeSlide(-1)">&#10094; PREV</button>
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="/public/pexels-vecislavas-popa-3741317.png"
+                alt="Kitchen"
+              />
+              <p class="caption">KITCHEN</p>
+            </div>
+            <div class="slide">
+              <img src="/public/spacejoy-XpbtQfr9Skg-unsplash.png" />
+              <p class="caption">BATHROOM</p>
+            </div>
+            <div class="slide">
+              <img
+                src="/public/How-to-do-Marble-Wall-Cladding.png"
+                alt="Fireplace"
+              />
+              <p class="caption">FIREPLACE</p>
+            </div>
+            <div class="slide">
+              <img src="/public/KP04BL1091.png" alt="Wall Cladding" />
+              <p class="caption">WALL CLADDING</p>
+            </div>
+            <div class="slide">
+              <img
+                src="/public/pexels-max-rahubovskiy-6301185.png"
+                alt="Wall Cladding"
+              />
+              <p class="caption">WALL CLADDING</p>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <button class="next" onclick="changeSlide(1)">NEXT &#10095;</button>
+          <div class="pagination"></div>
+          <!-- Pagination container -->
+        </div>
+      </div>
     </section>
+
+    <!-- <section class="slider-2">
+      <div class="slider-2-container">
+        <div class="slider-2-h2">
+          <h2>SHOP YOUR COUNTERTOP BY MATERIAL AND FUNCTION</h2>
+          <p>Find the perfect stone and countertop for your home.</p>
+        </div>
+    
+        <div class="slider-2-wrapper">
+          <button class="slider-2-prev" onclick="changeSlide2(-1)">&#10094; PREV</button>
+          
+          <div class="slider-2-slides">
+            <div class="slider-2-slide large-slide">
+              <img src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png" alt="Large Image">
+              <p class="caption">QUARTZ</p>
+              <div class="popup-icon" onclick="showPopup()">i</div>
+            </div>
+            <div class="slider-2-slide small-slide">
+              <img src="/public/8.Ranier.png" alt="Small Image">
+              <p class="caption">SHOP MATERIAL</p>
+              <div class="popup-icon" onclick="showPopup()">i</div>
+            </div>
+          </div>
+    
+          <button class="slider-2-next" onclick="changeSlide2(1)">NEXT &#10095;</button>
+        </div>
+    
+        <div id="popup" class="popup-content">
+          <span class="close-popup" onclick="closePopup()">×</span>
+          <p>Details about the washroom tiles...</p>
+        </div>
+      </div>
+    </section> -->
+
+    <div class="swiper mySwiper">
+      <h2 class="swiper-heading">SHOP YOUR COUNTERTOP BY MATERIAL AND FUNCTION</h2>
+      <p class="swiper-p">
+        Find the perfect stone and countertop for your home.
+      </p>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
+            alt="Large Image"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img src="/public/final image.png" alt="Large Image" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
+            alt="Large Image"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/public/627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w.png"
+            alt="Large Image"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next">NEXT</div>
+      <div class="swiper-button-prev">PREV</div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <img
+            src="/public/download (8).png"
+            alt="Plum Builders Logo"
+            class="footer-logo"
+          />
+          <p>CALL: 555-555-9855</p>
+          <p>EMAIL: INFO@PLUMBUILDERS.COM</p>
+          <p><strong>MAIN SLAB SHOWROOM:</strong></p>
+          <p>106 PRUDY AVE.</p>
+          <p>PORT Chester, NY, 10573</p>
+          <p><strong>Factory Location:</strong></p>
+          <p>28 Nursery Lane,</p>
+          <p>Rye, NY, 10580</p>
+        </div>
+        <div class="footer-section">
+          <h4>DESIGN ASSISTANCE</h4>
+          <ul>
+            <li>Measurements</li>
+            <li>Free Design Guide</li>
+            <li>Design Consultation</li>
+            <li>Visualizer</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>ABOUT US</h4>
+          <ul>
+            <li>Who We Are</li>
+            <li>What We Do</li>
+            <li>How We Do It</li>
+            <li>Showroom</li>
+            <li>Trade Professionals</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>COMPANY INFO</h4>
+          <ul>
+            <li>Financing</li>
+            <li>Careers</li>
+            <li>Made in USA</li>
+            <li>Blog</li>
+            <li>Resources</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>PRIVACY POLICY</p>
+        <p>PRIVACY TEERMS AND CONDITIONS</p>
+        <p>© 2023 PLUM BUILDERS. ALL RIGHTS RESERVED. POWERED BY XYZ</p>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>
