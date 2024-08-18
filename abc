@@ -43,3 +43,189 @@
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+    <section class="slider-1">
+        <div class="slider-container">
+          <div class="slider-h2">
+            <h2>START YOUR JOURNEY</h2>
+            <p>What type of project do you have?</p>
+          </div>
+  
+          <div class="slider">
+            <button class="prev" onclick="changeSlide(-1)">&#10094; PREV</button>
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="/public/pexels-vecislavas-popa-3741317.png"
+                  alt="Kitchen"
+                />
+                <p class="caption">KITCHEN</p>
+              </div>
+              <div class="slide">
+                <img
+                  src="/public/pexels-vecislavas-popa-3741317.png"
+                  alt="Kitchen"
+                />
+                <p class="caption">KITCHEN</p>
+              </div>
+              <div class="slide">
+                <img
+                  src="/public/pexels-vecislavas-popa-3741317.png"
+                  alt="Kitchen"
+                />
+                <p class="caption">KITCHEN</p>
+              </div>
+              <div class="slide">
+                <img src="/public/spacejoy-XpbtQfr9Skg-unsplash.png" />
+                <p class="caption">BATHROOM</p>
+              </div>
+              <div class="slide">
+                <img
+                  src="/public/How-to-do-Marble-Wall-Cladding.png"
+                  alt="Fireplace"
+                />
+                <p class="caption">FIREPLACE</p>
+              </div>
+              <div class="slide">
+                <img src="/public/KP04BL1091.png" alt="Wall Cladding" />
+                <p class="caption">WALL CLADDING</p>
+              </div>
+              <div class="slide">
+                <img
+                  src="/public/pexels-max-rahubovskiy-6301185.png"
+                  alt="Wall Cladding"
+                />
+                <p class="caption">WALL CLADDING</p>
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
+            <button class="next" onclick="changeSlide(1)">NEXT &#10095;</button>
+            <div class="pagination"></div>
+            <!-- Pagination container -->
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+<!-- SLider CSS  -->
+
+
+
+      .swiper {
+        width: 96%;
+        height: 100%;
+        margin-bottom: 20px;
+        margin-right: 46px;
+        margin-left: 46px;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #ffffff;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+        background-color: #ccc;
+        border-radius: 0% !important;
+        opacity: 1;
+        transition: background-color 0.3s;
+      }
+      
+      .swiper-pagination-bullet-active {
+        background-color: #333333 !important;
+      }
+      
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 105px !important;
+        height: 40px !important;
+        margin-right: -9px;
+        margin-left: -9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white !important;
+        transition: background-color 0.3s, color 0.3s;
+        font-family: "Gilroy-heavy", sans-serif;
+        letter-spacing: 2px;
+      }
+      
+      .swiper-button-next {
+        right: 10px;
+      }
+      
+      .swiper-button-prev {
+        left: 10px;
+      }
+      
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        content: none !important;
+      }
+      
+      .left-img {
+        width: 30%;
+        height: 600px;
+        margin-right: 18px;
+      }
+      
+      .right-img {
+        width: 70%;
+        height: 600px;
+      }
+      
+      .swiper-heading {
+        margin-bottom: 20px;
+      }
+      .swiper-p {
+        margin-bottom: 30px;
+      }
+      .overlay-wrapper {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        margin-top: -10px;
+        text-align: center;
+      }
+
+
+
+
+
+      <!-- another slider css  -->
